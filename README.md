@@ -11,6 +11,7 @@ var poisson = function(x, lambda) {
   var a = Math.pow(lambda, x);
   var b = Math.pow(e, (lambda * -1));
   var c = factorial(x);
+  // this weird thing is just to keep decimal and float value
   return parseFloat(((a * b) / c).toFixed(3));
 }
 
